@@ -1,0 +1,60 @@
+\chars [Megan][Mark][Riley][Carl]
+\authors [Arthur Zopellaro]
+\infos [+55 24 999960000][arthurazsoares@gmail.com]
+\title [Losing Space]
+
+\begin
+
+\int airlock/spaceship - night
+\action Pitch black. THROBBING.
+\action Airlock door UNLOCKS. FOOTSTEPS follows.
+\dia {1} Try not to get lost out there, child.
+\dia {0} Aye aye, sir.
+\dia {2} (through the comm) There's literally nothing out there.
+\action {0} puts her SPACE SUIT on.
+\dia {2} [CONT'D] (through the comm) Did someone else use the tank #3?
+\dia {0} (into the comm) I don't think so. Check with {3}.
+\dia {1} (into the comm) Is something wrong?
+\dia {2} (through the comm) The oxygen levels are at 98%. Maybe it's leaking. Take the #5 instead.
+\dia {3} (through the comm) No, #5 is leaking. I'm bringing you tank #2.
+\dia {1} (into the comm) Two tanks failing? Did you report back to Mission Control?
+\dia {3} (through the comm) Not yet. I thought it was a one-off case. I'd rather check #3 first though.
+\dia {1} (into the comm) Right. Make sure #2 is safe. (back to {0}) Are you okay?
+\dia {0} Sure.
+\dia {1} Maybe we should double check everything.
+\dia {3} (through the comm) You mean triple check. You are overthinking it, sir.
+\action FOOTSTEPS arrive alongside an ALUMINUM tank.
+\dia {3} [CONT'D] Here you go, Megs. I would use this one myself.
+\dia {0} I hope so. Thanks.
+\dia {1} I'll attach it to the suit.
+\dia {0} Thank you.
+\action {1}, late 40s, ATTACHES the tank to the suit.
+\dia {2} (through the comm) All set up here.
+\action A light shine bright displaying the inside of a helmet as it starts moving.
+\dia {3} Good luck.
+\dia {0} Won't need.
+\action The helmet is put on revealing the face of {0}, an Aeronautical Engineer in her early 30s.
+\action FOOTSTEPS move out of the airlock.
+\action {0} nods her crew members with a smile.
+\action The door LOCKS.
+\dia {2} (through the comm) Ready?
+\dia {0} (into the comm) Ready.
+\dia {2} (through the comm) Airlock gravity off in 3.. 2.. 1.. Off.
+\action The gravity generator GOES OFF. Less THROBBING now.
+\action {0} takes a DEEP BREATH and hold it.
+\dia {2} (through the comm) Decompression in 3.. 2.. 1..
+\action The airlock DEPRESSURIZES.
+\action SILENCE for a moment.
+\action {0} BREATHS OUT and closes her eyes.
+\dia {2} (through the comm) Opening the airlock door in 3.. 2.. 1..
+\action {0} is breathing normally.
+\dia {2} (through the comm) Be free little bird.
+\action {0} smiles and open her eyes.
+\action She's mesmerized.
+\dia {2} (through the comm) Little bird?
+\dia {0} (into the comm) Yes. On my way.
+
+\ext space - night
+\action {0}'s face is lit up by the helmet's interior lights. The illumination changes as she leaves the airlock.
+\dia {2} (through the comm) Beautiful, ain't it?
+\dia {0} (into the comm) Wonderful.
