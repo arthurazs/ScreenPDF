@@ -1,2 +1,5 @@
+#python
+*.pyc
+
 # setup.py
 *.egg
