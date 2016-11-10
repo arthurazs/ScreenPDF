@@ -36,7 +36,9 @@ setup(
     version=__version__,
     author='Arthur Zopellaro',
     author_email='arthurazsoares@gmail.com',
-    description=('Screenplay formatter.'),
+    description=(
+        '{} converts *.spdf to proper screenplay'
+        ' PDF format.'.format(info_name)),
     license='MIT',
     keywords=(
         'script screenplay format formatter'
@@ -67,7 +69,7 @@ setup(
         'Topic :: Text Processing :: General',
         'Topic :: Utilities'
     ],
-    setup_requires=['setuptools', 'pip', 'nose', 'rednose'],
+    setup_requires=['setuptools', 'pip', 'nose', 'rednose', 'fpdf'],
     install_requires=[],
     entry_points={
         'console_scripts': [
