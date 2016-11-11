@@ -1,4 +1,4 @@
-\chars [Megan][Mark][Riley][Carl]
+\chars [Megs][Mark][Riley][Carl][Tom]
 \authors [Arthur Zopellaro]
 \infos [+55 24 999960000][arthurazsoares@gmail.com]
 \title [Losing Space]
@@ -22,11 +22,12 @@
 \dia {1} (into the comm) Right. Make sure #2 is safe. (back to {0}) Are you okay?
 \dia {0} Sure.
 \dia {1} Maybe we should double check everything.
+MAYBE ADD {4} HERE LIKE 'Hey, it's freezing out there' 
 \dia {3} (through the comm) You mean triple check. You are overthinking it, sir.
 \action FOOTSTEPS arrive alongside an ALUMINUM tank.
-\dia {3} [CONT'D] Here you go, Megs. I would use this one myself.
+\dia {3} [CONT'D] Here you go, {0}. I would use this one myself.
 \dia {0} I hope so. Thanks.
-\dia {1} I'll attach it to the suit.
+\dia {1} I'll attach it for you.
 \dia {0} Thank you.
 \action {1}, late 40s, ATTACHES the tank to the suit.
 \dia {2} (through the comm) All set up here.
@@ -58,3 +59,124 @@
 \action {0}'s face is lit up by the helmet's interior lights. The illumination changes as she leaves the airlock.
 \dia {2} (through the comm) Beautiful, ain't it?
 \dia {0} (into the comm) Wonderful.
+\action {0} BREATHS calmly.
+\dia {2} (through the comm) Get to the ladder.
+\dia {0} (into the comm) Almost there.
+\dia {2} (through the comm) What about you, {4}?
+\dia {4} (through the comm) Appreciating the nothingness.
+\dia {0} (into the comm) I'm at the ladder.
+\dia {2} (through the comm) Great. Can you see {4}?
+\action {0} LAUGHS.
+\dia {0} (into the comm) There's a weirdo waving to me. Okay, now he's giving me the finger.
+\dia {4} (through the comm) He sounds like an interesting guy.
+\dia {2} (through the comm) I bet. {0}, get to the roof. You will lose visual from {4} but I'll guide you.
+\dia {4} (through the comm) Hey, {0}.
+\dia {0} (into the comm) Yes?
+\dia {4} (through the comm) About that ladder.
+\dia {0} (into the comm) What about it?
+\dia {4} (through the comm) Try not to get too high, okay?
+\action {2} bursts out laughing.
+\dia {0} (into the comm) I literally haven't smoked in years.
+\dia {2} (through the comm) I'd leave him out there.
+\dia {0} (into the comm) Maybe I will. I'm on the roof by the way.
+\dia {2} (through the comm) Okay, use the solar panel as a guide and move towards the back engine. {4}, can you confirm your oxygen readings?
+\dia {4} (through the comm) 75%.
+\dia {2} (through the comm) Fuck.
+\dia {3} (through the comm) Another one?
+\dia {1} (through the comm) {2}, report it back to Mission Control immediately. No more joking outside, you two get back ASAP. {3}, Prepare my suit.
+\dia {3} (through the comm) I think we should avoid more EVAs until we --
+\dia {1} (through the comm) Prepare the suit.
+\action {0} is BREATHING HEAVY.
+\dia {0} (into the comm) I'm by the engine.
+\dia {2} (through the comm) Release your tether from the roof and link it to the engine's guide.
+\dia {0} (into the comm) Done.
+\dia {2} (through the comm) Fuck. {4} dropped to 70%. {0} is at 90%. What the fuck is happening?
+\dia {4} (through the comm) I can go for a leap of faith. {0} can catch me.
+\dia {1} (through the comm) You will stay still. {3}, Prepare the airlock. I wanna be read if things go bad.
+\dia {3} Got you.
+\dia {1} Why did you stop guiding {0}?
+\dia {2} (through the comm) Sorry.. {0}, keep facing the engine and move all the way to your left.
+\action {0}' BREATHING rate has increased.
+\dia {2} [CONT'D] (through the comm) Okay, nice. Face the stars, take impulse and launch yourself.
+\action {0} takes a DEEP BREATH and hold it. She runs and jumps.
+\action SILENCE.
+\dia {4} (through the comm) She missed.
+\action {0} goes all the way around the engine and HITS the other side.
+\dia {0} Shit!
+\dia {1} Are you alright?
+\dia {0} Yes. I'll have to move all the way back though.
+\dia {4} I think I can reach you.
+\dia {1} No. She will have to get to you.
+\action {0} starts moving back to where she started.
+\dia {3} Airlock's ready.
+\dia {2} What if {0} throws her tether to {4} and they link to each other?
+\dia {0} We could try that.
+\dia {1} Too risk. I can't afford losing 2 crew members.
+MAYBE TALK ABOUT THE SECONDARY TETHER HERE
+\dia {4} She's back on the roof.
+\dia {0} I'm gonna try again.
+\dia {2} Aim for the solar panels so you get more momentum.
+\action {0} takes a DEEP BREATH and hold it. She runs and jumps again.
+\action SILENCE.
+\action {0} HITS the platform.
+\dia {4} She did it!
+\action Everyone is RELIEVED.
+\dia {2} That's my little bird. Throw your tether to her, {4}.
+\dia {3} How are the oxygen levels?
+\dia {2} 50% and 75%. We have enough time, don't worry.
+\dia {0} The tether is not long enough. I can't reach it from here.
+\dia {1} If I get to the platform, {0} could use my tether as an extension.
+\dia {2} There's no need. {4}, would you really do a leap of faith?
+\dia {4} Give me the order and I'll do.
+\dia {1} Don't you dare, {2}.
+\dia {2} {4} Tie your tether to the guide.
+\dia {4} I used to get tied a lot back in college.
+\dia {3} You never stop joking, do you?
+\dia {4} Not a joke. Girls loved me.
+\dia {0} More like the opposite.
+\dia {4} Hey, my life is on the line here. Tied and ready to go, {2}.
+\dia {2} Now I want you to launch yourself towards {0}. She'll throw you her secondary tether and you link it to yours.
+\dia {0} Great.. He's coming butt-first.
+\dia {4} Great view, wouldn't you say?
+\dia {0} No. I wouldn't.
+\action {0} throws her secondary tether.
+\dia {4} I can't reach. I'm floating to the side. I'll pull myself back and try again.
+\dia {1} Fasten the tie.
+\dia {4} Jeronimo!
+\action SILENCE.
+\dia {0} He got the tether.
+\action The crew is RELIEVED.
+\dia {4} Shall I release my main tether?
+\dia {2} Yes --
+\dia {1} Are you sure, {2}? I could go there.
+\dia {2} I'm sure, sir. Release it, {4}.
+\dia {4} (as in Harry Potter) Master has presented Dobby with orders. Dobby is free.
+\dia {3} Are you really bringing him back, {0}?
+\dia {0} Still deciding.
+\dia {1} Levels, {2}?
+\dia {2} We have time.
+\dia {1} Levels?
+\dia {2} (unsure) 32% and 65%.
+\action SILENCE.
+\dia {3} They're almost there. It'll be fine.
+\dia {4} Okay, no jokes anymore. I'm on the platform.
+\dia {2} Don't remove your link from {0} from now on.
+\dia {4} As much as she would love to, I won't let her.
+\action {0} PUNCHS {4}.
+\dia {0} What about "no jokes"?
+\dia {4} Sorry.
+\dia {1} Move you two.
+\dia {2} Take impulse and jump together.
+\dia {3} Aim for the solar panel.
+\dia {2} Yes, aim for the solar panel.
+\action {0} looks to {4} and nods. She takes a DEEP BREATH and HOLD IT.
+\action They jump.
+\action SILENCE.
+\dia {1} What happened?
+\dia {2} They're almost --
+\action They HIT the roof.
+\dia {4} There.
+MAYBE IT WILL BREAK HERE?
+
+
+MAYBE SAY IN THE BEGINING THAT THE DUDE IS LOST OUT THERE AND SHES GOING TO SAVE HIM
