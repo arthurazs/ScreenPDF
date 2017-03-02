@@ -235,6 +235,9 @@ class ScreenPDF(FPDF):
         self.set_right_margin(Pages.dialogueRight)
         self._writep(text, 'L', Pages.dialogueLeftMargin)
         self.set_right_margin(Pages.rightMarginSize)
+        # if (self._sameCharacter(name)):
+        #     self._character(name + ' (CONT\'D)', extension)
+        # else:
 
     def save(self, name):
         self._fadeOut()
