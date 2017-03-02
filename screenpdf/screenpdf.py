@@ -225,19 +225,29 @@ class ScreenPDF(FPDF):
         self._lastCharacter = current
         return False
 
-    def dialogue(self, name, text, extension='', parenthetical=''):
-        if (self._sameCharacter(name)):
-            self._character(name + ' (CONT\'D)', extension)
-        else:
-            self._character(name, extension)
-        if (parenthetical != ''):
-            self._parenthetical(parenthetical)
-        self.set_right_margin(Pages.dialogueRight)
-        self._writep(text, 'L', Pages.dialogueLeftMargin)
-        self.set_right_margin(Pages.rightMarginSize)
+    def dialogue(self, name, text, extension=''):
         # if (self._sameCharacter(name)):
         #     self._character(name + ' (CONT\'D)', extension)
         # else:
+        self._character(name, extension)
+
+        # in case there's more than 1 parenthetical
+        whole_dialogue = text.split(') ')
+        end_of_dialogue = len(whole_dialogue)
+        count = 1
+
+        for part in whole_dialogue:
+            lines = part.split('(')
+            self.set_right_margin(Pages.dialogueRight)
+            if lines[0]:
+                if count == end_of_dialogue:
+                    self._writep(lines[0], 'L', Pages.dialogueLeftMargin)
+                else:
+                    self._write(lines[0], 'L', Pages.dialogueLeftMargin)
+            self.set_right_margin(Pages.rightMarginSize)
+            if len(lines) > 1:
+                self._parenthetical(lines[1].replace('(', ''))
+            count += 1
 
     def save(self, name):
         self._fadeOut()

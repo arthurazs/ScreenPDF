@@ -90,21 +90,16 @@ class Converter(object):
         speaker, line = text.split('}', 1)
         speaker = int(speaker.replace('{', ''))
         extension = ''
-        parenthetical = ''
         if ']' in line:
             extension, line = line.split(']', 1)
             extension = extension.replace('[', '')
-        if ')' in line:
-            parenthetical, line = line.split(')', 1)
-            parenthetical = parenthetical.replace('(', '')
         char = self._charList[int(speaker)].strip()
         line = line.strip()
         extension = extension.strip()
-        parenthetical = parenthetical.strip()
         for num, name in enumerate(self._charList):
             person = '{' + str(num) + '}'
             line = line.replace(person, name)
         self._pdf.dialogue(
             char, line,
-            extension, parenthetical)
+            extension)
         self._logger.info('Dialogue still in beta')
