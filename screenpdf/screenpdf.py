@@ -218,7 +218,7 @@ class ScreenPDF(FPDF):
         self.set_right_margin(Pages.rightMarginSize)
 
     def _sameCharacter(self, name):
-        previous = (self._lastCharacter, self._sceneCount)
+        previous = self._lastCharacter
         current = (name, self._sceneCount)
         if (previous == current):
             return True
