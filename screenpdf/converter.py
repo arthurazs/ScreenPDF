@@ -64,7 +64,7 @@ class Converter(object):
             name = self._charList[i]
             if self._firstList[i]:
                 if person in text:
-                    name = name.upper()
+                    text = text.replace(person, name.upper(), 1)
                     self._firstList[i] = False
             text = text.replace(person, name)
         self._pdf.action(text)
