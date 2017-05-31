@@ -22,7 +22,6 @@
 \dia {1} (into the comm) Right. Make sure #2 is safe. (back to {0}) Are you okay?
 \dia {0} Sure.
 \dia {1} Maybe we should double check everything.
-MAYBE ADD {4} HERE LIKE 'Hey, it's freezing out there' 
 \dia {3} (through the comm) You mean triple check. You are overthinking it, sir.
 \action FOOTSTEPS arrive alongside an ALUMINUM tank.
 \dia {3} [CONT'D] Here you go, {0}. I would use this one myself.
@@ -172,11 +171,3 @@ MAYBE TALK ABOUT THE SECONDARY TETHER HERE
 \action {0} looks to {4} and nods. She takes a DEEP BREATH and HOLD IT.
 \action They jump.
 \action SILENCE.
-\dia {1} What happened?
-\dia {2} They're almost --
-\action They HIT the roof.
-\dia {4} There.
-MAYBE IT WILL BREAK HERE?
-
-
-MAYBE SAY IN THE BEGINING THAT THE DUDE IS LOST OUT THERE AND SHES GOING TO SAVE HIM
