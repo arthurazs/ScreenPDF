@@ -7,10 +7,10 @@ for proper screenplay format.
 
 ## How to run
 
-Executing `python3 script_converter.py -f full-example.spdf` into the
-Terminal generates the `right time.pdf` file.
+Executing `python3 script_converter.py -f losing-space.spdf` into the
+Terminal generates the `Losing Space.pdf` file.
 
-You can write your own script following the `full-example.spdf` syntax.
+You can write your own script following the `losing-space.spdf` syntax.
 
 ## References
 
