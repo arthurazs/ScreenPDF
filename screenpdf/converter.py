@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 from .screenpdf import ScreenPDF
 import logging
+import os.path as path
 
 
 class Converter(object):
@@ -28,6 +29,7 @@ class Converter(object):
         self._infoList = []
         self._titleString = ''
         self._pdf = None
+        self._isDialogueBeingUsed = False  # Flag to print log only once
 
     def get_all(self):
         return self._functions
@@ -75,7 +77,9 @@ class Converter(object):
             self._titleString, self._authList, self._infoList)
 
     def _savePdf(self):
-        self._pdf.save(self._titleString + '.pdf')
+        filename = self._titleString + '.pdf'
+        self._pdf.save(filename)
+        self._logger.info('PDF saved at ' + path.abspath(filename))
 
     def generatePdf(self):
         self._createPdf()
@@ -102,4 +106,7 @@ class Converter(object):
         self._pdf.dialogue(
             char, line,
             extension)
-        self._logger.info('Dialogue still in beta')
+
+        if not self._isDialogueBeingUsed:
+            self._isDialogueBeingUsed = True
+            self._logger.warn('Dialogue still in beta')
