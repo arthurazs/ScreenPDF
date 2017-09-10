@@ -127,6 +127,7 @@ as:
 
 \[1] Reingart, M. (2013). pyfpdf: FPDF for Python [online] Available at:
 <https://github.com/reingart/pyfpdf> [Accessed 25 Sep. 2016].
+
 \[2] Moreno, M.; Tuxford, K. (2010). How to Write a
 Screenplay: Script Writing Example & Screenwriting Tips [online]
 Available at:
