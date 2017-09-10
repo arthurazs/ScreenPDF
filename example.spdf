@@ -1,0 +1,28 @@
+\chars [Riley][Carl][Megan]
+\authors [Arthur Zopellaro][Jane Doe]
+\infos [+55 24 999960000][arthurazsoares@gmail.com]
+\title [Screenplay Example]
+
+\begin
+
+\int airlock/spaceship - night
+\act Airlock door UNLOCKS. FOOTSTEPS follows.
+\dia {1} Who would've thought we would be here one day.
+\dia {0} I know, right?
+\dia {2} (through the comm) Are you guys done preparing?
+\act {0}, an Aeronautical Engineer in her early 30s, puts her space suit on.
+\dia {2} [CONT'D] (through the comm) We are late already.
+\dia {0} (into the comm) Sorry. Ready to go!
+
+\ext outer space - night
+\act {0}'s face is lit up by the helmet's interior lights. The illumination changes as she leaves the airlock.
+\dia {2} (through the comm) Beautiful, ain't it?
+\dia {0} (into the comm) Wonderful.
+
+\int ground control/nasa - day
+\act {2}, a Flight Director in her late 30s, is watching live footage from the spaceship's exterior.
+\dia {0} (into the microphone) I can see you now.
+\act {2} sees {0} waving to the camera through the monitor.
+\dia {0} (through the comm) Did you wave back?
+\act {2} smirks.
+\dia {2} (into the microphone) Focus. Head over to the ladder.
