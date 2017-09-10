@@ -1,8 +1,8 @@
 # ScreenPDF
 
 ScreenPDF is a library for easy screenplay generation under Python,
-using PyFPDF as base (see [PyFPDF][1] \[1]).
-ScreenPDF uses [Moreno's how to write a screenplay][2] \[2] as reference
+using PyFPDF as base (see [PyFPDF][1] \[[1](#references)]).
+ScreenPDF uses [Moreno's how to write a screenplay][2] \[[2](#references)] as reference
 for proper screenplay format.
 
 **Contents**
@@ -32,7 +32,7 @@ for proper screenplay format.
 
 The [example.spdf](example.spdf) is a 3 page (1 title page + 2 content
 pages) example screenplay and will generate the following
-[Screenplay Example.pdf](Screenplay Example.pdf).
+[Screenplay Example.pdf](Screenplay%20Example.pdf).
 
 ## ScreenPDF Syntax
 
