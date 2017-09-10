@@ -69,8 +69,8 @@ setup(
         'Topic :: Text Processing :: General',
         'Topic :: Utilities'
     ],
-    setup_requires=['setuptools', 'pip', 'nose', 'rednose', 'fpdf'],
-    install_requires=[],
+    setup_requires=['setuptools', 'pip', 'nose', 'rednose'],
+    install_requires=['fpdf'],
     entry_points={
         'console_scripts': [
             '{0}={0}.__main__:main'.format(info_name)]
