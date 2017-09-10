@@ -6,12 +6,14 @@ import os.path as path
 
 info_name = 'screenpdf'
 info_url = 'https://github.com/arthurazs/{}/'.format(info_name)
+author_name = 'Arthur Zopellaro'
+email = 'arthurazsoares@gmail.com'
 
 try:
     with open(path.abspath(path.join(info_name,
                                      'version.py'))) as version:
         exec(version.read())
-except:
+except IOError:
     print('ERROR version not found')
     __version__ = ''
 
@@ -20,13 +22,17 @@ info_download = '{}archive/v{}.tar.gz'.format(info_url, __version__)
 try:
     with open('PyPIREADME.rst', 'r') as readme:
         info_long_description = readme.read()
-except:
+except IOError:
     try:
-        print('PyPIREADME.rst not found, will use README.md instead')
-        print('WARNING README.md should not be uploaded to PyPI')
+        print(
+            'PyPIREADME.rst not found, trying '
+            'README.md instead')
+        print(
+            'WARNING It isn\'t recommended to upload '
+            'a markdown file as README to PyPI')
         with open('README.md', 'r') as readme:
             info_long_description = readme.read()
-    except:
+    except IOError:
         print('ERROR README.md not found either')
         info_long_description = ''
 
@@ -34,8 +40,10 @@ except:
 setup(
     name=info_name,
     version=__version__,
-    author='Arthur Zopellaro',
-    author_email='arthurazsoares@gmail.com',
+    author=author_name,
+    author_email=email,
+    maintainer=author_name,
+    maintainer_email=email,
     description=(
         '{} converts *.spdf to proper screenplay'
         ' PDF format.'.format(info_name)),
@@ -70,7 +78,7 @@ setup(
         'Topic :: Utilities'
     ],
     setup_requires=['setuptools', 'pip', 'nose', 'rednose'],
-    install_requires=['fpdf'],
+    install_requires=['fpdf'],  # try fpdf2 in the future
     entry_points={
         'console_scripts': [
             '{0}={0}.__main__:main'.format(info_name)]
