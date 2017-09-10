@@ -139,10 +139,8 @@ class ScreenPDF(FPDF):
     def _titlePage(self):
         self.newPage()
         self.set_y((Pages.height / 2) - Pages.textHeight)
-        quote = u'\N{QUOTATION MARK}'.decode('utf-8', 'strict')
-        test = '{0}{1}{0}'.format(quote, self._title.upper())
-        line = test.encode('utf-8', 'strict')
-        self._writep(line, 'C')
+        title = '“{}”'.format(self._title.upper())
+        self._writep(title, 'C')
 
         self._writep('written by', 'C')
         author = ''
