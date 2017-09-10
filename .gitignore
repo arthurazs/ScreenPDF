@@ -1,4 +1,4 @@
-#python
+# python
 *.pyc
 
 # setup.py
@@ -6,3 +6,6 @@
 *.eggs
 *.egg-info
 build
+
+# screenpdf
+*.pkl
