@@ -3,3 +3,6 @@
 
 # setup.py
 *.egg
+*.eggs
+*.egg-info
+build
