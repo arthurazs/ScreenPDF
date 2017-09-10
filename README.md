@@ -5,10 +5,19 @@ using PyFPDF as base (see [PyFPDF][1] \[1]).
 ScreenPDF uses [Moreno's how to write a screenplay][2] \[2] as reference
 for proper screenplay format.
 
-## How to run
+## How to use
 
-Executing `python3 script_converter.py -f losing-space.spdf` into the
-Terminal generates the `Losing Space.pdf` file.
+### Installing ScreenPDF
+
+    $ git clone https://github.com/arthurazs/ScreenPDF.git
+    $ cd ScreenPDF
+    $ pip install -e .
+
+### Running ScreenPDF
+
+    $ screenpdf -h
+    $ screenpdf losing-space.spdf
+    $ evince Losing\ Space.pdf
 
 You can write your own script following the `losing-space.spdf` syntax.
 
