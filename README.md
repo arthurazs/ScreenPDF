@@ -32,7 +32,9 @@ for proper screenplay format.
 
 The [example.spdf](example.spdf) is a 3 page (1 title page + 2 content
 pages) example screenplay and will generate the following
-[Screenplay Example.pdf](Screenplay%20Example.pdf).
+[Screenplay Example.pdf](Screenplay%20Example.pdf):
+
+![Image of the generated PDF example](example.png)
 
 ## ScreenPDF Syntax
 
