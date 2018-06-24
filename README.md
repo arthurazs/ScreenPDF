@@ -71,9 +71,10 @@ The first few lines are reserved to information such as:
     - `\authors [Arthur Zopellaro][Someone Else]`
         - Each author should be inside different brackets
 - **infos** (Additional Information)
-    - `\infos [+55 24 999960000][arthurazsoares@gmail.com]`
+    - `\infos [+55 24 987654321][arthurazsoares@gmail.com]`
         - Phone number
         - Email
+        - Address
 - **title** (Screenplay Title)
     - `\title [Screenplay Example]`
         - Printed all uppercase on the first page of the document
