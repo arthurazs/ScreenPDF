@@ -67,7 +67,7 @@ for line in lines:
     command, _, text = line.partition(' ')
     try:
         getattr(converter, functions.get(command, command))(text)
-    except AttributeError as e:
+    except AttributeError:
         print(f"\nERROR Command '{command}' doesn't exist.")
         print(f'\\{line}\n')
 

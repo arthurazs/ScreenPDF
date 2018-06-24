@@ -11,6 +11,9 @@ class Converter:
         'informations': 'infos',
         'act': 'action',
         'dia': 'dialogue',
+        'int': 'interior',
+        'ext': 'exterior',
+        'characters': 'chars'
     }
 
     def __init__(self):
@@ -43,10 +46,10 @@ class Converter:
     def title(self, text):
         self._titleString = text.replace(']', '').replace('[', '')
 
-    def int(self, text):
+    def interior(self, text):
         self._pdf.scene('int. ' + text)
 
-    def ext(self, text):
+    def exterior(self, text):
         self._pdf.scene('ext. ' + text)
 
     def action(self, text):
