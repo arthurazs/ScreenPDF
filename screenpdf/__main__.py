@@ -61,14 +61,20 @@ with open(filename, 'r') as text:
 lines = [line.strip() for line in spdf.split('\\')[1:]]
 
 converter = Converter()
-functions = converter.TRANSLATOR
 
 for line in lines:
     command, _, text = line.partition(' ')
     try:
-        getattr(converter, functions.get(command, command))(text)
+        if text:
+            getattr(converter, converter.TRANSLATE.get(command, command))(text)
+        else:
+            getattr(converter, converter.TRANSLATE.get(command, command))()
+
     except AttributeError:
         print(f"\nERROR Command '{command}' doesn't exist.")
+        print(f'\\{line}\n')
+    except TypeError as e:
+        print(f'\nERROR Command {e}')
         print(f'\\{line}\n')
 
 sys.exit(converter.savePdf())

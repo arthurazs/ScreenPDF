@@ -6,7 +6,7 @@ import os.path as path
 
 class Converter:
 
-    TRANSLATOR = {
+    TRANSLATE = {
         'authors': 'auths',
         'informations': 'infos',
         'act': 'action',
@@ -77,7 +77,7 @@ class Converter:
         self._createPdf()
         self._savePdf()
 
-    def begin(self, text):
+    def begin(self):
         self._createPdf()
 
     def dialogue(self, text):
