@@ -227,6 +227,9 @@ class ScreenPDF(FPDF):
         # if (self._sameCharacter(name)):
         #     self._character(name + ' (CONT\'D)', extension)
         # else:
+        name = name.strip()
+        text = text.strip()
+        extension = extension.strip()
         self._character(name, extension)
 
         # in case there's more than 1 parenthetical

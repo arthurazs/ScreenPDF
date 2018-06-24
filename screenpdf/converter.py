@@ -89,15 +89,11 @@ class Converter:
         if ']' in line:
             extension, line = line.split(']', 1)
             extension = extension.replace('[', '')
-        char = self._charList[int(speaker)].strip()
-        line = line.strip()
-        extension = extension.strip()
         for num, name in enumerate(self._charList):
             person = '{' + str(num) + '}'
             line = line.replace(person, name)
-        self._pdf.dialogue(
-            char, line,
-            extension)
+        char = self._charList[speaker]
+        self._pdf.dialogue(char, line, extension)
 
         if not self._isDialogueBeingUsed:
             self._isDialogueBeingUsed = True
