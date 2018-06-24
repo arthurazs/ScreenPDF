@@ -63,7 +63,7 @@ class Converter:
         self._pdf.action(text)
         # TODO add underline
 
-    def _createPdf(self):
+    def begin(self):
         self._pdf = ScreenPDF(
             self._titleString, self._authList, self._infoList)
 
@@ -71,13 +71,6 @@ class Converter:
         filename = self._titleString + '.pdf'
         self._pdf.save(filename)
         self._logger.info('PDF saved at ' + path.abspath(filename))
-
-    def generatePdf(self):
-        self._createPdf()
-        self._savePdf()
-
-    def begin(self):
-        self._createPdf()
 
     def dialogue(self, text):
         # FIXME
