@@ -58,18 +58,17 @@ with open(filename, 'r') as text:
     spdf = text.read()
 
 # [1:] removes first empty item e.g. ['', 'chars', 'dia', 'etc']
-lines = spdf.split('\\')[1:]
+lines = [line.strip() for line in spdf.split('\\')[1:]]
 
 converter = Converter()
-functions = converter.get_all()
+functions = converter.TRANSLATOR
 
 for line in lines:
-    command, *text = line.split()
-    text = ' '.join(text)
-    if command in functions:
-        functions[command](text)
-    else:
+    command, _, text = line.partition(' ')
+    try:
+        getattr(converter, functions.get(command, command))(text)
+    except AttributeError as e:
         print(f"\nERROR Command '{command}' doesn't exist.")
-        print(f'\\{line}')
+        print(f'\\{line}\n')
 
-sys.exit(converter._savePdf())
+sys.exit(converter.savePdf())
