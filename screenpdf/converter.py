@@ -2,6 +2,7 @@ from __future__ import absolute_import
 from .screenpdf import ScreenPDF
 import logging
 import os.path as path
+from re import compile as re_compile
 
 
 class Converter:
@@ -25,6 +26,7 @@ class Converter:
         self._titleString = ''
         self._pdf = None
         self._isDialogueBeingUsed = False  # Flag to print log only once
+        self._re_findall_chars = re_compile('{\d+}').findall
 
     # TODO remove_bracket() for the replaces
     def _build_list(self, text, var):
@@ -51,16 +53,19 @@ class Converter:
     def exterior(self, text):
         self._pdf.scene('ext. ' + text)
 
-    def action(self, text):
-        for i in range(len(self._charList)):
-            person = '{' + str(i) + '}'
-            name = self._charList[i]
-            if self._firstList[i]:
-                if person in text:
-                    text = text.replace(person, name.upper(), 1)
-                    self._firstList[i] = False
+    def _replace_names(self, text, is_action=True):
+        people = set(self._re_findall_chars(text))
+        for person in people:
+            index = int(person[1:-1])
+            name = self._charList[index]
+            if is_action and self._firstList[index]:
+                text = text.replace(person, name.upper(), 1)
+                self._firstList[index] = False
             text = text.replace(person, name)
-        self._pdf.action(text)
+        return text
+
+    def action(self, text):
+        self._pdf.action(self._replace_names(text))
         # TODO add underline
 
     def begin(self):
@@ -81,10 +86,8 @@ class Converter:
         if ']' in line:
             extension, line = line.split(']', 1)
             extension = extension.replace('[', '')
-        for num, name in enumerate(self._charList):
-            person = '{' + str(num) + '}'
-            line = line.replace(person, name)
         char = self._charList[speaker]
+        line = self._replace_names(line, False)
         self._pdf.dialogue(char, line, extension)
 
         if not self._isDialogueBeingUsed:
