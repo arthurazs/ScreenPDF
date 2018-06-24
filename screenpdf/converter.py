@@ -28,10 +28,9 @@ class Converter:
 
     # TODO remove_bracket() for the replaces
     def _build_list(self, text, var):
-        for item in list(
-                filter(None, text.replace('[', '').split(']'))):
+        for item in text.replace('[', '').split(']')[:-1]:
             var.append(item)
-            if (var == self._charList):
+            if var is self._charList:
                 self._firstList.append(True)
 
     def chars(self, text):
