@@ -57,19 +57,19 @@ spdf = ''
 with open(filename, 'r') as text:
     spdf = text.read()
 
-lines = spdf.split('\\')
+# [1:] removes first empty item e.g. ['', 'chars', 'dia', 'etc']
+lines = spdf.split('\\')[1:]
 
 converter = Converter()
 functions = converter.get_all()
 
 for line in lines:
-    command = 'ERROR'.join(line.split()[:1])
-    # print (command)
-    if command != '':
-        if command in functions:
-            functions[command](' '.join(line.split()[1:]))
-        else:
-            print (
-                '''ERROR Command '{}' doesn't exist.'''.format(command))
+    command, *text = line.split()
+    text = ' '.join(text)
+    if command in functions:
+        functions[command](text)
+    else:
+        print(f"\nERROR Command '{command}' doesn't exist.")
+        print(f'\\{line}')
 
 sys.exit(converter._savePdf())
