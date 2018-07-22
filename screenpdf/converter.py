@@ -19,6 +19,8 @@ class Converter:
 
     def __init__(self):
         self._logger = logging.getLogger('screenpdf.convert')
+        # TODO change charList and firstList to dict
+        # e.g. {'{0}': {'name': 'arthur', 'first': True}, }
         self._charList = []
         self._firstList = []
         self._authList = []
@@ -26,7 +28,7 @@ class Converter:
         self._titleString = ''
         self._pdf = None
         self._isDialogueBeingUsed = False  # Flag to print log only once
-        self._re_findall_chars = re_compile('{\d+}').findall
+        self._re_findall_chars = re_compile(r'{\d+}').findall
 
     # TODO remove_bracket() for the replaces
     def _build_list(self, text, var):
