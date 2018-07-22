@@ -68,7 +68,7 @@ The first few lines are reserved to information such as:
         - Except the first time each name appears (in which will be
         printed all uppercase)
 - **authors** (Authors' names)
-    - `\authors [Arthur Zopellaro][Someone Else]`
+    - `\authors [Arthur Zopellaro][Jane Doe]`
         - Each author should be inside different brackets
 - **infos** (Additional Information)
     - `\infos [+55 24 987654321][arthurazsoares@gmail.com]`
